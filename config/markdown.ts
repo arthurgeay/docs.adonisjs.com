@@ -61,7 +61,7 @@ export const zones = [
     menu: Guides,
   },
   {
-    title: 'Reference',
+    title: 'Référence',
     baseUrl: '/reference',
     template: 'docs',
     contentPath: './content/reference',
@@ -75,7 +75,7 @@ export const zones = [
     menu: Cookbooks,
   },
   {
-    title: 'Releases',
+    title: 'Versions',
     baseUrl: '/releases',
     template: 'docs',
     contentPath: './content/releases',

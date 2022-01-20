@@ -1,29 +1,29 @@
-AdonisJS is a collection of several first-party packages built around the [core of the framework](https://github.com/adonisjs/core). Whenever you hear us mentioning the AdonisJS version, assume that we are talking about the version of the framework core.
+AdonisJS est une collection de plusieurs paquets construits autour du [noyau du framework](https://github.com/adonisjs/core). Chaque fois que vous nous entendez mentionner la version d'AdonisJS, supposez que nous parlons de la version du noyau du framework.
 
-Every other package like `@adonisjs/lucid`, or `@adonisjs/mail` have their independent versions and are free to have their release cycle.
+Tous les autres paquets comme `@adonisjs/lucid`, ou `@adonisjs/mail` ont leurs versions indépendantes et sont libres d'avoir leur cycle de publication.
 
-## Following semver
-We strictly follow [semantic versioning](https://semver.org/) and bump the major version after every breaking change. This means, what is AdonisJS 5 today can quickly become AdonisJS 8 in few months.
+## Utilisation de semver
+Nous suivons strictement le [versionnement sémantique](https://semver.org/) et faisons évoluer la version majeure après chaque modification de rupture. Cela signifie que AdonisJS 5 peut rapidement devenir AdonisJS 8 dans quelques mois.
 
-- We will bump the patch version when releasing **critical bug fixes** (ex: 5.2.0 to 5.2.1).
-- The minor version includes **new features** or **non-critical bug fixes**. Also, we will deprecate APIs during a minor release. (ex: 5.2.0 to 5.3.0)
-- When releasing breaking changes, we bump the major version (ex: 5.2.0 to 6.0.0).
+- Nous augmenterons la version du patch lors de la publication de **corrections de bogues critiques** (ex : 5.2.0 à 5.2.1).
+- La version mineure comprend **de nouvelles fonctionnalités** ou **des corrections de bogues non critiques**. De plus, nous allons déprécier des APIs pendant une version mineure. (ex : 5.2.0 à 5.3.0)
+- Lorsque nous publions des modifications de rupture, nous augmentons la version majeure (ex : 5.2.0 à 6.0.0).
 
-## Introducing breaking changes
-As AdonisJS is getting mature, we take more responsibility for not introducing breaking changes every then and now, and all breaking changes **should go through a deprecation and RFC phase**.
+## Ruptures de compatibilité ascendante
+Comme AdonisJS devient mature, nous prenons plus de responsabilités pour ne pas introduire des ruptures de compatibilité, et tous les changements **doivent passer par une phase de dépréciation et de RFC**.
 
-Before introducing any breaking change, we will publish an [RFC](https://github.com/adonisjs/rfcs) discussing the motivations behind the change. If there is not a significant pushback, we will go ahead with the change.
+Avant d'introduire un changement radical, nous publierons un [RFC](https://github.com/adonisjs/rfcs) expliquant les raisons de ce changement. S'il n'y a pas d'opposition significative, nous procéderons au changement.
 
-The initial phase of the change will deprecate the existing APIs during a minor release. Running your application after this change will get many warnings, but nothing will break and continue to work as it is.
+La phase initiale du changement consistera à déprécier les API existantes lors d'une version mineure. Si vous exécutez votre application après ce changement, vous obtiendrez de nombreux avertissements, mais rien ne sera cassé et votre application continuera à fonctionner comme avant.
 
-After a cool-down phase of a minimum of 4 weeks, we will remove the deprecated APIs during the next major release. Removing the old/dead code is essential to ensure the framework codebase is well maintained and not bloated with past variations.
+Après une phase d'un minimum de 4 semaines, nous supprimerons les API dépréciées lors de la prochaine version majeure. La suppression de l'ancien code est essentielle pour garantir que la base de code du framework est bien maintenue et qu'elle n'est pas encombrée de variations passées.
 
-The following changes are not subject to breaking changes.
+Les modifications suivantes ne sont pas soumises à des ruptures de compatibilité.
 
-- **Undocumented APIs and internal data structures** can get changed during any release. So, if you are relying on undocumented APIs or private class members, you are on your own when we change or restructure them.
-- **Alpha and next versions of AdonisJS** may receive breaking changes without a major version bump. This is because we want the creative freedom to iterate quickly based upon our learnings in the alpha period.
+- **Les API non documentées et les structures de données internes** peuvent être modifiées au cours de chaque version. Par conséquent, si vous vous appuyez sur des API non documentées ou des membres de classe privés, vous serez seul lorsque nous les modifierons ou les restructurerons.
+- **Les versions alpha et suivantes d'AdonisJS** peuvent recevoir des modifications de rupture sans changement de version majeur. Cela s'explique par le fait que nous voulons disposer de la liberté créative nécessaire pour itérer rapidement sur la base des enseignements tirés de la période alpha.
 
-## Release cycle
-AdonisJS roughly follows an 8-week release cycle for shipping new features or publishing breaking changes. However, critical bug fixes and security patches are usually released right away.
+## Cycle de sortie
+AdonisJS suit un cycle de publication de 8 semaines pour l'envoi de nouvelles fonctionnalités ou la publication de modifications de rupture. Toutefois, les corrections de bogues critiques et les correctifs de sécurité sont généralement publiés immédiatement.
 
-You can check out our [roadmap on Trello](https://trello.com/b/3klaHbfP/adonisjs-roadmap) and [what's in the next release card](https://trello.com/c/y8PCAodY/47-september-planning-2021) to know about the upcoming changes.
+Vous pouvez consulter notre [roadmap sur Trello](https://trello.com/b/3klaHbfP/adonisjs-roadmap) et notre [carte des prochaines versions](https://trello.com/c/y8PCAodY/47-september-planning-2021) pour connaître les changements à venir.
