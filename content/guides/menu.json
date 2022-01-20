@@ -16,7 +16,7 @@
             "contentPath": "installation.md"
           },
           {
-            "title": "Release process",
+            "title": "Procédure de publication",
             "permalink": "release-process",
             "contentPath": "release-process.md"
           }
